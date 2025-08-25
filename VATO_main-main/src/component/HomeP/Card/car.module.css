@@ -1,0 +1,149 @@
+.car{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.car .container{
+    max-width: 1300px;
+    margin: auto;
+}
+.car .blocki{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.car .blocki .sec{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.car .blocki .sec h3{
+    font-size: 30px;
+    color: #0d0d0d;
+}
+.car .blocki .sec h5{
+    font-size:19px;
+    color: #050505;
+}
+.car .head{
+    margin: 0px auto;
+    text-align: center;
+}
+.car .head h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.car .head p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.car  .flex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin: 40px 0;
+}
+.car  .flex .card{
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: -1px 3px 19px -9px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 3px 19px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 19px -9px rgba(0,0,0,0.75);
+}
+.car  .flex .card .icon{
+    width: 50px;
+    text-align: center;
+    margin: 10px auto; 
+}
+.car  .flex .card h4{
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+.car  .flex .card p{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 100;
+    
+    
+}
+.car  .flex .card:hover{
+    box-shadow: -1px 5px 16px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 16px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 16px -5px rgba(0,0,0,0.75);
+    background: #2a8a9b;
+background: linear-gradient(90deg, rgba(42, 138, 155, 0.43) 0%, rgba(87, 199, 180, 0.64) 50%, rgba(83, 237, 206, 0.73) 100%);
+}
+
+@media only screen and (max-width:1000px) {
+    .car{
+      padding: 0 5px;
+    }
+       .car .blocki{
+        display: block;
+    }
+   .car .blocki .sec{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 20px 0;
+    }
+   .car .blocki .sec h3{
+        font-size: 30px;
+    }
+   .car .blocki .sec h5{
+        font-size:19px;
+        color: #000000;
+    }
+ 
+    .car .head{
+        margin: 0px auto;
+        text-align: center;
+    }
+    .car .head h3{
+        font-size: 30px;
+        text-transform: capitalize;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+    .car .head p{
+        font-size: 17px;
+       
+    }
+    .car  .flex{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+        margin: 40px 0;
+    }
+    .car  .flex .card{
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+  
+    .car  .flex .card h4{
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        
+    }
+    .car  .flex .card p{
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: 100;
+        
+        
+    }
+    
+}

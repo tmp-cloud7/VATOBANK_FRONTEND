@@ -1,0 +1,211 @@
+.carI{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 100px;
+    margin: 100px 0;
+}
+.carI .container{
+    max-width: 1300px;
+    margin: auto;
+}
+.carI .head{
+    margin: 0px auto;
+    text-align: center;
+}
+.carI .head h3{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.carI .head p{
+    font-size: 20px;
+   
+}
+.carI  .flex{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 60px 0;
+}
+
+.carI  .flex .card .sec{
+    /* width: 500px; */
+    position: relative;
+}
+.carI  .flex .card{
+    height: 500px;
+    margin: 0 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.carI  .flex .card img{
+ width: 350px;
+ height: 500px;
+ display: block;
+ border-radius: 10px;
+}
+.carI  .flex .card .seci{
+   width: 315px;
+   height: 500px;
+   padding: 20px;
+   position: absolute;
+   background: rgba(27, 27, 27, .5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   bottom: 2px;
+   border-radius: 10px;
+   color: #fff;
+   opacity: 0;
+   transition: linear ease-in-out .5s;
+}
+.carI  .flex .card .seci:hover{
+    opacity: 1;
+    transition: linear ease-in-out .5s;
+}
+.carI  .flex .card .seci h4{
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+.carI  .flex .card .seci p{
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 100;
+    
+    
+}
+.carI  .flex .card:hover{
+ cursor: pointer;
+}
+/* .carI  .flex .card .seci > *{
+    transform: translateX(25px);
+    transition: transform 0.6s;
+} */
+
+
+/* @media only screen and (max-width:1000px) {
+
+    .carI .flex .card .seci {
+        opacity: 1 !important;
+        position: absolute;
+        background: rgba(27, 27, 27, 0.5);
+        width: 98%;
+        height: 500px;
+        padding: 20px;
+        bottom: 2px;
+        border-radius: 10px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .carI{
+     padding: 0 5px;
+    }
+    .carI  .flex{
+        display: block;
+    }
+    .carI  .flex .card{
+        height: 500px;
+        margin: 20px 0;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+    }
+    .carI  .flex .card img{
+     width: 100%;
+     display: block;
+     border-radius: 10px;
+     
+    }
+    .carI  .flex .card .seci{
+       width:98%;
+       height: 500px;
+       padding: 20px;
+       position: absolute;
+       background: rgba(27, 27, 27, .5);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       bottom: 2px;
+       border-radius: 10px;
+       color: #fff;
+       opacity: 0;
+       transition: linear ease-in-out .5s;
+    }
+} */
+ /* === DESKTOP STYLES === */
+.carI  .flex .card .seci {
+    width: 315px;
+    height: 500px;
+    padding: 20px;
+    position: absolute;
+    background: rgba(27, 27, 27, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 2px;
+    border-radius: 10px;
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+ }
+ 
+ /* Show overlay when hovering the card */
+ .carI  .flex .card:hover .seci {
+     opacity: 1;
+     pointer-events: auto;
+ }
+ 
+ /* === MOBILE STYLES === */
+ @media only screen and (max-width: 1000px) {
+     .carI {
+         padding: 0 5px;
+     }
+ 
+     .carI  .flex {
+         display: block;
+     }
+ 
+     .carI  .flex .card {
+         height: 500px;
+         margin: 20px 0;
+         box-shadow: 5px 5px 20px black;
+         overflow: hidden;
+         position: relative;
+     }
+ 
+     .carI  .flex .card img {
+         width: 100%;
+         display: block;
+         border-radius: 10px;
+     }
+ 
+     .carI  .flex .card .seci:hover {
+         width: 100%;
+         height: 100%;
+         opacity: 1 !important;
+         position: absolute;
+         top: 0;
+         left: 0;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background: rgba(27, 27, 27, 0.5);
+         pointer-events: auto;
+     }
+ }
+ 
