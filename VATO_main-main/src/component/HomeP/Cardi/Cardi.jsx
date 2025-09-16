@@ -67,7 +67,7 @@ const Cardi = () => {
                 <h3>Let’s try our  service now!</h3>
                 <p>Everything you need to accept card payments  and grow<br /> your business anywhere on the planet.</p>
               </div>
-              <Link to='/registera'><button>Get started </button></Link>
+              <Link to='/register'><button>Get started </button></Link>
              
             </div>
         </div>
