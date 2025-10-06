@@ -1,72 +1,100 @@
-# Getting Started with Create React App
+💳 VatoBank Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌐 Overview
 
-## Available Scripts
+VatoBank is a modern e-banking web application that provides users with a secure and intuitive interface to manage their finances online.
+This frontend—built with React—connects to the Laravel REST API backend to deliver real-time account data, transaction updates, and a smooth user experience across devices.
 
-In the project directory, you can run:
+The application was developed as part of a Capstone Project showcasing full-stack proficiency in modern web technologies and best practices for secure, scalable financial applications.
 
-### `npm start`
+🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔐 User Authentication: Secure login with JWT-based authentication and multi-factor verification.
+💰 Account Dashboard: Displays real-time account balance, transaction history, and spending summary.
+🔄 Fund Transfers: Send money between accounts instantly.
+💳 Deposits & Withdrawals: Manage cash flow directly from your dashboard.
+🧾 Transaction Persistence: All user activity is stored and retrieved via the backend API.
+⚙️ State Management: Built with Redux Toolkit for predictable, global state handling.
+📱 Responsive Design: Fully optimized for desktop and mobile banking experiences.
+🧩 Modular Architecture: Organized by features and components for maintainability.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🏗️ Tech Stack
 
-### `npm test`
+Frontend:
+React.js
+Redux Toolkit
+React Router DOM
+Axios (for API communication)
+Tailwind CSS / Custom CSS modules
+Framer Motion (for smooth UI transitions)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Backend (API):
+Laravel REST API 
+MySQL / PostgreSQL database (via Aiven)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📁 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+VATOBANK_FRONTEND/
+│
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.jpg
+│   ├── logo512.png
+│   ├── manifest.json
+│   ├── robots.txt
+│   └── vatologo3.png
+│
+├── src/
+│   ├── Assets/
+│   ├── api/            # Axios instance and API utilities
+│   ├── app/            # Redux store configuration
+│   ├── components/     # Reusable UI components
+│   ├── features/       # State slices and logic
+│   ├── helper/register # Form helpers and logic
+│   ├── pages/          # Page-level components (Dashboard, Login, Register, etc.)
+│   ├── App.js
+│   ├── index.js
+│   ├── style.js
+│   ├── App.css
+│   └── index.css
+│
+├── .env
+├── .gitignore
+└── README.md
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🧪 Testing & Development Tools
 
-### `npm run eject`
+Postman: API endpoint testing
+Redux DevTools: State monitoring
+React Developer Tools: Component debugging
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🔐 Security
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tokens are stored securely in sessionStorage.
+All API requests are sent over HTTPS.
+Authentication handled with Bearer tokens via Axios interceptors.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🧑‍💻 Author: Tayo Popoola | Frontend Developer | Full-Stack Engineer
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📧 tayopopoola92@gmail.com
 
-### Code Splitting
+💼 www.linkedin.com/in/tayo-p-16a138275
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🌐 https://lucent-gnome-a196b3.netlify.app
 
-### Analyzing the Bundle Size
+Backend Repository: [VatoBank API ](https://github.com/tmp-cloud7/vatobank-app-api)(Laravel)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### 🧩 Quick Setup
+Clone and run locally:
+```bash
+git clone https://github.com/tmp-cloud7/VATOBANK_FRONTEND.git
+cd VATOBANK_FRONTEND
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# max
-# VATO_main
